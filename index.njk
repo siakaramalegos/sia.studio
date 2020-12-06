@@ -15,41 +15,42 @@ date: 2020-12-05
   </header>
   <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
     <div class="[ inner-wrapper ] [ sf-flow ]">
-      <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">My Work</h2>
-      <article>
+      <h2 class="[ post-list__heading ] [ text-700 md:text-800 ] gap-top-300">My Work</h2>
+
+      <article class="work-article">
         <img src="/images/figure.jpg"
           alt="Charcoal female figure sketch framed and sitting on distressed wood floor leaning on a white brick wall">
         <h3>Artwork</h3>
-        <p>Charcoal figure drawings on paper and vintage book pages and sheet music. Original art and digital downloads
+        <p class="gap-bottom-300">Charcoal figure drawings on paper and vintage book pages and sheet music. Original art and digital downloads
           available for purchase.</p>
-        <ul>
-          <li><a href="https://www.etsy.com/shop/DesignsBySiaShop">Shop artwork</a></li>
-        </ul>
+        <a class="[ button ] [ font-base text-base weight-bold ] gap-right-300" href="https://www.etsy.com/shop/DesignsBySiaShop">Shop artwork</a>
       </article>
-      <article>
+
+      <article class="work-article">
         <img src="/images/coloring.jpg" alt="Coloring pages with scenes of Greece">
         <h3>Hand-Drawn Coloring Pages and Book</h3>
-        <p>Beautiful, hand-drawn images of Greece for coloring or watercolor. Inspired by the artist’s original photography, ancient frescoes, ancient and biblical mosaics, and Orthodox icons.</p>
-        <ul>
-          <li><a href="http://www.amazon.com/dp/1532862741">Shop coloring book</a></li>
-          <li><a href="https://www.etsy.com/shop/DesignsBySiaShop">Shop digital downloads</a></li>
-          <li><a href="http://www.designsbysia.com/files/postcards.pdf">Download free postcards</a></li>
-        </ul>
+        <p class="gap-bottom-300">Beautiful, hand-drawn images of Greece for coloring or watercolor. Inspired by the artist’s original photography, ancient frescoes, ancient and biblical mosaics, and Orthodox icons.</p>
+        <a class="[ button ] [ font-base text-base weight-bold ] gap-right-300" href="http://www.amazon.com/dp/1532862741">Shop coloring book</a>
+        <a class="[ button ] [ font-base text-base weight-bold ] gap-right-300" href="https://www.etsy.com/shop/DesignsBySiaShop">Shop digital downloads</a>
+        <a class="[ button ] [ font-base text-base weight-bold ] gap-right-300" href="/files/postcards.pdf">Download free postcards</a>
       </article>
-      <article>
+
+      <article class="work-article">
         <img src="/images/pineapple_wrist_cuff.jpg"
           alt="Crochet lace bracelet on a woman's wrist">
         <h3>Original Crochet Patterns</h3>
-        <p>Exquisitely designed pieces that are inspired by vintage crochet techniques, and updated in new and interesting ways. Check out free patterns on <a href="/tags/crochet/">my blog</a>.</p>
-        <ul>
-          <li><a href="https://www.etsy.com/shop/CrochetBySia">Shop digital downloads</a></li>
-          <li><a href="/tags/crochet/">Read blog</a></li>
-        </ul>
+        <p class="gap-bottom-300">Exquisitely designed pieces that are inspired by vintage crochet techniques, and updated in new and interesting ways. Check out free patterns on <a href="/tags/crochet/">my blog</a>.</p>
+        <a class="[ button ] [ font-base text-base weight-bold ] gap-right-300" href="https://www.etsy.com/shop/CrochetBySia">Shop digital downloads</a>
+        <a class="[ button ] [ font-base text-base weight-bold ] gap-right-300" href="/tags/crochet/">Read blog</a>
       </article>
+
     </div>
   </section>
 
+  <hr>
+
   {# Posts list #}
+  {% set postListHeading = 'Select posts' %}
   {% set postListItems = collections.posts | getSelect %}
   {% include "postslist.njk" %}
 

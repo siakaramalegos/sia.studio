@@ -39,6 +39,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("css/fonts");
+  eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("javascript");
 
   /* Markdown Plugins */

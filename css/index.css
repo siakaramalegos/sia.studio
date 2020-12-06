@@ -273,3 +273,10 @@ code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;font-
 .post .video-player{padding-top:63%}
 @media(min-width: 48rem){.post .video-player{padding-top:66%}
 }
+
+.work-article {
+  margin: 36px 0 96px;
+}
+.work-article a {
+  margin: 8px 12px 0 0;
+}

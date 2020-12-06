@@ -6,6 +6,11 @@
       "external": false
     },
     {
+      "text": "Posts",
+      "url": "/posts",
+      "external": false
+    },
+    {
       "text": "Instagram",
       "url": "https://www.instagram.com/nolasia/",
       "external": true

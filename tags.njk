@@ -10,13 +10,13 @@ pagination:
     - posts
     - tagList
   addAllPagesToCollections: true
-layout: layouts/home.njk
+layout: layouts/base.njk
 renderData:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
 
-<div class="content">
+<!-- <div class="content">
   <section>
     <h1>Tagged “{{ tag }}”</h1>
 
@@ -26,3 +26,35 @@ permalink: /tags/{{ tag }}/
 
   <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
 </div>
+
+
+{# Intro content #}
+{% set introHeading = title %}
+{% set introSummary %}{{ content | safe }}{% endset %}
+
+{# Post list content #}
+{% set postListHeading = 'All posts' %}
+{% set postListItems = collections[ tag ] | getPublished %}
+
+<main id="main-content" tabindex="-1">
+  {% include "intro.njk" %}
+  {% include "postslist.njk" %}
+</main> -->
+
+
+{% set pageType = 'Tag Archive' %}
+
+{# Intro content #}
+{% set introHeading %}Posts filed under “{{ tag }}”{% endset %}
+{% set introHeadingLevel = '2' %}
+
+{# Post list content #}
+{% set postListHeadingLevel = '2' %}
+{% set postListHeading = 'Posts' %}
+{% set postListItems = collections[tag] | getPublished %}
+
+<main id="main-content" tabindex="-1">
+  {% include "intro.njk" %}
+  {% include "postslist.njk" %}
+  {% include "pagination.njk" %}
+</main>

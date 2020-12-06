@@ -1,25 +1,23 @@
 ---
-layout: layouts/home.njk
+layout: layouts/base.njk
 tags:
   - nav
 navtitle: Blog
 permalink: /posts/
+title: Blog
 ---
 
-<div class="content">
-  <section>
-    <h1>Blog</h1>
-  </section>
+{% set pageType = 'Post Archive' %}
 
-  <section>
-    <h2>Select posts</h2>
-    {% set postslist = collections.posts | getSelect %}
-    {% include "postslist.njk" %}
-  </section>
+{# Intro content #}
+{% set introHeading = title %}
+{% set introSummary %}{{ content | safe }}{% endset %}
 
-  <section>
-    <h2>All posts</h2>
-    {% set archivelist = collections.posts %}
-    {% include "archivelist.njk" %}
-  </section>
-</div>
+{# Post list content #}
+{% set postListHeading = 'All posts' %}
+{% set postListItems = collections.posts | getPublished %}
+
+<main id="main-content" tabindex="-1">
+  {% include "intro.njk" %}
+  {% include "postslist.njk" %}
+</main>
