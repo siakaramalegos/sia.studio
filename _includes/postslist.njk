@@ -1,26 +1,19 @@
-<div reversed class="postlist">
-  {% for post in postslist | reverse %}
-    <article class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-      <div class="postlist-image">
-        <img src="{{post.data.featuredImagePrefix}}_300.jpg"
-          srcset="{{post.data.featuredImagePrefix}}_300.jpg 300w,
-                  {{post.data.featuredImagePrefix}}_600.jpg 600w"
-          sizes="(min-width: 1020px) 311px, (min-width: 680px) 48.75vw, calc(100vw - 20px)"
-          alt="">
-      </div>
-      <p><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></p>
-      <h3 class="postlist-title a-reset">
-        <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-      </h3>
-      <p>{{ post.data.description }}</p>
-      <p>
-        {% for tag in post.data.tags %}
-          {%- if tag != "posts" -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-          {%- endif -%}
+{% if postListItems.length %}
+  <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
+    <div class="[ inner-wrapper ] [ sf-flow ]">
+      <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">Select posts</h2>
+      <ol class="[ post-list__items ] [ sf-flow ] [ pad-top-300 ]" reversed>
+        {% for item in postListItems | reverse %}
+          <li class="post-list__item">
+            <h3 class="font-base leading-tight text-600 weight-mid">
+              <a href="{{ item.url }}" class="post-list__link" rel="bookmark">{{ item.data.title }}</a>
+            </h3>
+            <p class="text-500 gap-top-300 weight-mid">
+              <time datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+            </p>
+          </li>
         {% endfor %}
-      </p>
-    </article>
-  {% endfor %}
-</div>
+      </ol>
+    </div>
+  </section>
+{% endif %}

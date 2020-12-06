@@ -1,5 +1,84 @@
----
-layout: layouts/base.njk
-templateClass: tmpl-home
----
-{{ content | safe }}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+  <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
+
+  <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com">
+  <!-- Global site tag (gtag.js) - Google Analytics for sia.studio-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-87PQLQM16V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-87PQLQM16V');
+  </script>
+
+  <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thegreengreek" />
+  <meta name="twitter:creator" content="@thegreengreek" />
+  <meta name="twitter:title" content="sia.studio" />
+  <meta name="twitter:image" content="https://sia.studio/img/sia-codes.png" />
+  <meta name="twitter:image:alt" content="sia.studio" />
+  <meta name="twitter:domain" content="sia.studio" />
+  <meta property="og:url" content="https://sia.studio/" />
+  <meta property="og:title" content="sia.studio" />
+  <meta property="og:image" content="https://sia.studio/img/sia-codes.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+
+  <meta name="monetization" content="$pay.stronghold.co/1a1a6b5138fcdc84cb29d9b04a798e65540">
+
+  <link rel="preload" as="font" type="font/woff2" href="/css/fonts/josefin-sans-v14-latin-700.woff2" crossorigin>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header role="banner" class="[ site-head ] [ pad-top-700 pad-bottom-700 ">
+    <div class="wrapper">
+      <span class="visually-hidden">{{ site.name }}: {{ pageType }}</span>
+      <div class="[ site-head__inner ] [ md:box-flex space-between align-center ]">
+        <a href="/" class="[ site-head__site-name ] [ leading-tight ]"{{ 'aria-current=page' if page.url == '/' | safe }}>
+          <span class="visually-hidden">{{ 'Back to homepage' if page.url != '/' else 'Homepage' }}</span>
+          <span class="[ site-head__site-name ] [ text-600 ]" aria-hidden="true">s</span>
+        </a>
+        {% include "nav.njk" %}
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    {{ content | safe }}
+  </main>
+
+  <footer role="contentinfo" class="[ site-foot ] [ pad-top-700 pad-bottom-900 ]">
+    <div class="wrapper">
+      <div class="[ site-foot__inner ] [ md:box-flex space-between align-start ]">
+        {% if metadata.description %}
+          <div>
+            <article class="[ site-foot__details ] [ sf-flow measure-compact ]">
+              <h2 class="font-base text-600">{{ metadata.title }}</h2>
+              {{ metadata.description | safe }}
+            </article>
+          </div>
+        {% endif %}
+        <div>
+          {% include "nav.njk" %}
+          <theme-toggle></theme-toggle>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
