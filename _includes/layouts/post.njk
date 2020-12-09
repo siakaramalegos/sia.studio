@@ -29,10 +29,12 @@ layout: layouts/base.njk
           <div class="[ nav ] [ box-flex align-center ]">
             <h2 class="font-base text-600 weight-mid">Filed under</h2>
             <ul class="[ nav__list ] [ box-flex align-center pad-left-400 ] [ p-category ]">
-              {% for item in tags %}
+              {% for tag in tags %}
+                {%- if tag != "posts" -%}
                 <li class="nav__item">
-                  <a href="/tags/{{ item }}">{{ item }}</a>
+                  <a href="/tags/{{ tag }}">{{ tag }}</a>
                 </li>
+                {%- endif -%}
               {% endfor %}
             </ul>
           </div>

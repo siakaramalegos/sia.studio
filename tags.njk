@@ -34,7 +34,7 @@ permalink: /tags/{{ tag }}/
 
 {# Post list content #}
 {% set postListHeading = 'All posts' %}
-{% set postListItems = collections[ tag ] | getPublished %}
+{% set postListItems = collections[ tag ] %}
 
 <main id="main-content" tabindex="-1">
   {% include "intro.njk" %}
@@ -51,7 +51,7 @@ permalink: /tags/{{ tag }}/
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
 {% set postListHeading = 'Posts' %}
-{% set postListItems = collections[tag] | getPublished %}
+{% set postListItems = collections[tag] %}
 
 <main id="main-content" tabindex="-1">
   {% include "intro.njk" %}

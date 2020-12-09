@@ -15,7 +15,7 @@ title: Blog
 
 {# Post list content #}
 {% set postListHeading = 'All posts' %}
-{% set postListItems = collections.posts | getPublished %}
+{% set postListItems = collections.posts %}
 
 <main id="main-content" tabindex="-1">
   {% include "intro.njk" %}

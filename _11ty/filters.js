@@ -15,7 +15,6 @@ module.exports = {
     return `https://twitter.com/search?f=tweets&src=typd&q=${encodeURI(postUrl)}`
   },
   getSelect: posts => posts.filter(post => post.data.isSelect),
-  getPublished: posts => posts.filter(post => !post.data.unpublished),
   truncate: text => text.length > 300 ? `${text.substring(0, 300)}...` : text,
   getReadingTime: text => {
     const wordsPerMinute = 200;
