@@ -6,7 +6,10 @@ body{-ms-overflow-style:-ms-autohiding-scrollbar;scroll-behavior:smooth;font-siz
 ul[class],ol[class]{list-style:none}
 a:not([class]){text-decoration:underline;text-decoration-skip-ink:auto;cursor:pointer}
 input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,select::-webkit-input-placeholder{line-height:normal}
-img{max-width:100%}
+img{
+  height: auto;
+  max-width:100%;
+}
 @media(prefers-reduced-motion: reduce){
   *{-webkit-animation:none !important;animation:none !important;transition:none !important;scroll-behavior:auto !important}
 }
@@ -279,4 +282,24 @@ code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;font-
 }
 .work-article a {
   margin: 8px 12px 0 0;
+}
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+.direct-link {
+  color: var(--color-theme-primary);
+  opacity: 0.1;
+  border-bottom: 1px solid var(--color-theme-highlight);
+  box-shadow: var(--color-theme-highlight) 0 -2px 0 0 inset;
+  text-decoration: none;
+}
+.direct-link:hover {
+  background-color: var(--color-theme-highlight);
+  text-decoration: none;
+}
+h2:hover .direct-link {
+  opacity: 1;
 }
