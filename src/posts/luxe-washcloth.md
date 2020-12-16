@@ -9,7 +9,7 @@ isSelect: true
 
 I already released this pattern on Ravelry, but I wanted to post for those of you not on Ravelry.  This was my first washcloth pattern.  You can get the matching Bath Mitt pattern through [Ravelry](http://www.ravelry.com/patterns/library/luxe-bath-collection-washcloth-and-bath-mitt) or [Etsy](https://www.etsy.com/listing/168959130/luxe-bath-collection-crochet-washcloth).  Enjoy!
 
-![Folded Crochet potholder sitting on a table](/img/luxe/luxe-washcloth.JPG "Luxe Washcloth")
+![Folded Crochet potholder sitting on a table](/images/luxe/luxe-washcloth.JPG "Luxe Washcloth")
 
 Bring the spa home to your own bathroom with this luxurious organic cotton washcloth.  Everyone needs a little pampering, and this quick project, paired with the matching bath mitt (separate pattern) let you indulge before you can finish saying, “yarn over, insert hook, yarn over, pull up a loop, yarn over, draw through two loops, yarn over, draw through last two loops.”  Well, maybe that’s a bit of an exaggeration, but they’re still quick and perfect for gift-giving, especially paired with a favorite bath shop gift card.  For troubleshooting or feedback, please contact me directly!
 
@@ -60,6 +60,6 @@ Border Row 3: Pull up Color A from below, ch 1, sc in same st, *sc in next 2 st,
 I would love to see your finished objects (post on Ravelry or in comments)! Here is a photo of the matching set of washcloth plus bath mitt using the alternative color scheme, and you can get the matching Bath Mitt pattern through [Ravelry](http://www.ravelry.com/patterns/library/luxe-bath-collection-washcloth-and-bath-mitt) or [Etsy](https://www.etsy.com/listing/168959130/luxe-bath-collection-crochet-washcloth).
 
 
-![Bath mitt and washcloth](/img/luxe/luxe-bath-mitt.JPG "Luxe Bath Mitt and Washcloth")
+![Bath mitt and washcloth](/images/luxe/luxe-bath-mitt.JPG "Luxe Bath Mitt and Washcloth")
 
 Happy hooking! (the legal kind)

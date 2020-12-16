@@ -9,7 +9,7 @@ isSelect: true
 
 > Want to support independent designers? Consider purchasing a [printer-friendly (pdf) version](https://www.etsy.com/listing/168968769/matching-crochet-washcloth-and-bath-mitt?ref=shop_home_active_14) of this pattern plus a matching bath mitt on Etsy for a nominal amount. 💗
 
-![Folded Crochet potholder sitting on a table](/img/spa/folded-spa.JPG "Spa Washcloth")
+![Folded Crochet potholder sitting on a table](/images/spa/folded-spa.JPG "Spa Washcloth")
 
 I created yet another washcloth pattern, so here it is just in time for last-minute Christmas present making.  It's super fast and fairly easy. Let me know if you find any errors or need help troubleshooting! Please note that this pattern is copyrighted and thus for personal use only (do not sell pattern or products made from pattern). Thanks, and happy hooking (the legal kind)!! The matching bath mitt is available through [Ravelry](http://www.ravelry.com/patterns/library/spa-bath-collection-washcloth-and-bath-mitt) or [Etsy](https://www.etsy.com/listing/168968769/spa-bath-collection-crochet-washcloth).
 
@@ -64,4 +64,4 @@ Border Row 5: Ch 1, make picot in same st, *sc in next st, make picot in next st
 
 I would love to see your finished objects (post on Ravelry or in comments)!  Here is a photo of the matching set of washcloth plus bath mitt, and you can buy it through through [Ravelry](http://www.ravelry.com/patterns/library/spa-bath-collection-washcloth-and-bath-mitt) or [Etsy](https://www.etsy.com/listing/168968769/spa-bath-collection-crochet-washcloth).
 
-![Washcloth and batt mitt](/img/spa/spa-mitt-cloth.JPG "Spa Bath Mitt and Washcloth set")
+![Washcloth and batt mitt](/images/spa/spa-mitt-cloth.JPG "Spa Bath Mitt and Washcloth set")

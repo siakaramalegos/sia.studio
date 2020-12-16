@@ -9,8 +9,8 @@ This geometric potholder (or washcloth) has concentric half-squares on one side 
 
 I designed this simple, free pattern to better show people the concepts of what I call mosaic crochet before they decide to purchase one of my patterns featuring this technique ([click here to see them all](https://www.etsy.com/shop/CrochetBySia?section_id=16351883&ref=shopsection_leftnav_1)).  I also include detailed videos to demonstrate the pattern techniques.  Each video is linked in its location in the pattern, but you can also see [the entire playlist here](https://www.youtube.com/playlist?list=PLOmFcHEnwM5aAlzVdvJh_ezW6JCawq61D).  Try out the pattern, and let me know what you think!
 
-![Crochet potholder sitting on a filet crochet tablecloth](/img/mosaic/mosaic4.JPG "Top of potholder")
-![Crochet potholder sitting on a filet crochet tablecloth](/img/mosaic/mosaic3.JPG "Stitch texture detail on reverse")
+![Crochet potholder sitting on a filet crochet tablecloth](/images/mosaic/mosaic4.JPG "Top of potholder")
+![Crochet potholder sitting on a filet crochet tablecloth](/images/mosaic/mosaic3.JPG "Stitch texture detail on reverse")
 
 ## Gauge & Size
 Gauge is not critical in this pattern unless you want to make it a specific size.  If you're using scrap yarn, I suggest using an appropriate hook size for your yarn thickness and allowing the potholder/washcloth to grow or shrink accordingly.  Gauge is 12 stitches and 15-16 rows of sc = 4 inches square.  The finished size is about 6 3/4 inches wide by about 5 1/2 inches long.
@@ -43,7 +43,7 @@ I created a [video for how to make the Special Half-Treble Crochet (ht) stitch](
 ## Motif Graphic
 This graphic is provided for those of you who work better with pictures than text, like me.  Any square that is blank is simply a sc stitch. The ht stitches are worked into the sc’s 3 rows below the current row, and always worked in front of the chains of the in-between rows (watch the video).  Row 1 starts at the bottom with Color A, which is grey in this graphic.
 
-![Chart of stitch colors](/img/mosaic/mosaic_chart.png "Motif graphic")
+![Chart of stitch colors](/images/mosaic/mosaic_chart.png "Motif graphic")
 
 ## Pattern
 Beginning Chain:  Ch 19 with the I hook.

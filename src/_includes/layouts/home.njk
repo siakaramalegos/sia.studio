@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>sia.studio | {{ renderData.title or title or metadata.title }}</title>
+  <title>{{ renderData.title or title or metadata.title }}</title>
   <meta name="description" content="{{ renderData.description or description or metadata.description }}">
   <meta property="og:description" content="{{ renderData.description or description or metadata.description }}" />
 
@@ -22,21 +22,22 @@
   <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- TODO: update -->
+  <!-- <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@thegreengreek" />
   <meta name="twitter:creator" content="@thegreengreek" />
   <meta name="twitter:title" content="sia.studio" />
-  <meta name="twitter:image" content="https://sia.studio/img/sia-codes.png" />
+  <meta name="twitter:image" content="https://sia.studio/images/sia-codes.png" />
   <meta name="twitter:image:alt" content="sia.studio" />
   <meta name="twitter:domain" content="sia.studio" />
   <meta property="og:url" content="https://sia.studio/" />
   <meta property="og:title" content="sia.studio" />
-  <meta property="og:image" content="https://sia.studio/img/sia-codes.png">
+  <meta property="og:image" content="https://sia.studio/images/sia-codes.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:height" content="630"> -->
 
-  <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
 
   <meta name="monetization" content="$pay.stronghold.co/1a1a6b5138fcdc84cb29d9b04a798e65540">
 
@@ -57,7 +58,9 @@
     </div>
   </header>
 
-  {{ content | safe }}
+  <main id="main-content" tabindex="-1">
+    {{ content | safe }}
+  </main>
 
   <footer role="contentinfo" class="[ site-foot ] [ pad-top-700 pad-bottom-900 ]">
     <div class="wrapper">

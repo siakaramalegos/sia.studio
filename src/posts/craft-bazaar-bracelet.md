@@ -9,7 +9,7 @@ isSelect: true
 
 I'm back at it!  My friend is participating in her school's craft bazaar, so I was inspired to create a few new patterns.  For those of you who are looking for patterns you can use to earn a few bucks, feel free to use these for your own craft bazaars as long as you give my blog credit.
 
-![Lace flower bracelet on a woman's wrist](/img/antique_lace_bracelet.JPG "Finished Antique Lace bracelet")
+![Lace flower bracelet on a woman's wrist](/images/antique_lace_bracelet.JPG "Finished Antique Lace bracelet")
 
 For these bracelets, I was inspired by the Blueprint Crochet [Julie Cuff](http://www.ravelry.com/patterns/library/julie-cuff) that I made last year as a Christmas present - I thought why not make a whole series of these using crochet flowers and lace edgings?  Here is the pattern for my first lace crochet bracelet - I would love to see your interpretations!  Please let me know if you find any errors in the pattern.  I know a diagram a la Japanese crochet would be easier to follow, but hey it's a free pattern.
 

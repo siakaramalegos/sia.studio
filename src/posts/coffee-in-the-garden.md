@@ -7,7 +7,7 @@ isSelect: true
 ---
 I designed and wrote my first crochet pattern.  It's a simple sentence, but it's difficult to explain how I actually have excitement bursting inside when I type those letters.  It's a small accomplishment for many, but I do love the idea of creating something new - especially something that other people can derive joy from and hopefully not too much pain (when attempting to interpret the directions!).  It's a coffee cozy with a rose and grass pattern on it:
 
-![crochet coffee cozy around a paper coffee cup](/img/crochet/coffee-cozy.jpg)
+![crochet coffee cozy around a paper coffee cup](/images/crochet/coffee-cozy.jpg)
 
 You can download it from [Ravelry](http://www.ravelry.com/designers/sia-karamalegos) or [Etsy](https://www.etsy.com/shop/CrochetBySia).
 

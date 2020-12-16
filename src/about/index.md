@@ -9,7 +9,7 @@ date: 2019-01-02
 ---
 
 <section>
-<img src="/img/sia_karamalegos_small.jpg" alt="Sia Karamalegos" class="headshot">
+<img src="/images/sia_karamalegos_small.jpg" alt="Sia Karamalegos" class="headshot">
 
 I'm a freelance web developer, a [Women Techmakers](https://www.womentechmakers.com/) ambassador, and a co-organizer for [GDG New Orleans](https://www.gdgneworleans.com/). I'm also a Google Developer Expert in Web Technologies. As a developer, I love building things that help make people's lives easier. Check out [Coder Ipsum](https://coder-ipsum.tech/) for a fun developer-inspired ipsum text generator.
 

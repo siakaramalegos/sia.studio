@@ -8,9 +8,9 @@ Another pattern release!  I'm on a roll now.  :)  Check out the photos for my ne
 
 Pattern can be found on both [Etsy](https://www.etsy.com/listing/210457515/square-key-unisex-scarf-crochet-pattern) and [Ravelry](http://www.ravelry.com/patterns/library/square-key-unisex-scarf).  Cheers!
 
-![Dog wearing the square key scarf](/img/square-key/square-key-dog.JPG)
-![Person wearing the square key scarf](/img/square-key/square-key1.JPG)
-![Person wearing the square key scarf](/img/square-key/square-key2.JPG)
-![Folded square key scarf](/img/square-key/square-key3.JPG)
-![Square key scarf stitch and texture detail](/img/square-key/square-key4.JPG)
-![Square key scarf back texture detail](/img/square-key/square-key5.JPG)
+![Dog wearing the square key scarf](/images/square-key/square-key-dog.JPG)
+![Person wearing the square key scarf](/images/square-key/square-key1.JPG)
+![Person wearing the square key scarf](/images/square-key/square-key2.JPG)
+![Folded square key scarf](/images/square-key/square-key3.JPG)
+![Square key scarf stitch and texture detail](/images/square-key/square-key4.JPG)
+![Square key scarf back texture detail](/images/square-key/square-key5.JPG)
