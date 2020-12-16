@@ -123,8 +123,7 @@ My parents divorced when I was a baby, and my dad was mostly absent from my life
 
 For a brief moment, I resented my mom because she didn’t do this. But then I realized that the problem was with me. I needed to make that change if I wanted to be closer to her. That simple task of starting to call her at least weekly changed our relationship. I’m grateful.
 
-<!-- TODO: update link -->
-As a corollary to this rule, make your peace with your loved ones now. A few years ago, my dad was diagnosed with lung cancer, and we lost him only four harrowing months later. To this day I am still grateful to the counselor at MD Anderson who told us not to wait to say our last words. So, we had “the talk” while he was still healthy enough and responsive. I cannot imagine how much regret I would have today if I hadn’t taken her advice. You can read more about [our story here](https://medium.com/@thegreengreek/what-finally-pushed-me-to-learn-to-code-92ce51e85daf).
+As a corollary to this rule, make your peace with your loved ones now. A few years ago, my dad was diagnosed with lung cancer, and we lost him only four harrowing months later. To this day I am still grateful to the counselor at MD Anderson who told us not to wait to say our last words. So, we had “the talk” while he was still healthy enough and responsive. I cannot imagine how much regret I would have today if I hadn’t taken her advice. You can read more about [our story here](https://sia.codes/posts/what-pushed-me-to-code/).
 
 <figure>
   <img src="{% src "family_hiking_hthbol.jpg" %}"
