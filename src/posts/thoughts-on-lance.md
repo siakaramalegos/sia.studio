@@ -1,7 +1,7 @@
 ---
 title: My thoughts on Lance Armstrong
 description: On morality and good vs bad
-date: 2010-10-27
+date: 2012-10-27
 tags:
   - writing
 ---
