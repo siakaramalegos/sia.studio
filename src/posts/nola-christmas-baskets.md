@@ -1,7 +1,7 @@
 ---
 title: NOLA Christmas Baskets
 date: 2012-12-02
-tags: ["New Orleans", "cooking"]
+tags: ["New Orleans", "cooking", "crafts"]
 isSelect: false
 ---
 

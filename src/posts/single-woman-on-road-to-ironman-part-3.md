@@ -1,7 +1,7 @@
 ---
 title: A single woman on the road to Ironman, part 3
 date: 2010-12-10
-tags: ["travel", "health"]
+tags: ["travel", "health", 'photography']
 isSelect: false
 ---
 

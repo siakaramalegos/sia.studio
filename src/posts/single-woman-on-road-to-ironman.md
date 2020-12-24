@@ -1,7 +1,7 @@
 ---
 title: A single woman on the road to Ironman
 date: 2010-11-15
-tags: ["travel", "health"]
+tags: ["travel", "health", 'photography']
 isSelect: false
 ---
 

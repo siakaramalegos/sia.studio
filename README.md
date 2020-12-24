@@ -1,6 +1,6 @@
 # sia.codes blog
 
-This blog started with the [Eleventy](https://github.com/11ty/eleventy) 11ty blog starter.
+This blog started with the [Eleventy](https://github.com/11ty/eleventy) 11ty blog starter and Hylia. It's a mish-mash with a lot of custom code.
 
 ## Design inspiration
 
@@ -85,3 +85,51 @@ DEBUG=* npx eleventy
 For all sia.codes enhancements: [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 For the eleventy-base-blog: MIT
+
+## Old links
+Add redirections - also grab stats for popularity
+http://siatex.blogspot.com/2010/11/for-love-of-japanese-crochet.html
+http://siatex.blogspot.com/2010/11/on-wings-of-japanese-butterfly.html
+http://siatex.blogspot.com/2014/06/phone-cozy.html
+http://siatex.blogspot.com/2010/12/out-of-control-crafty-christmas.html
+http://siatex.blogspot.com/2010/11/sharing-art-of-crochet.html
+http://siatex.blogspot.com/2014/01/sneaux-day-activity-pups-in-cups.html
+http://siatex.blogspot.com/2013/11/team-colors-earflap-hat-pattern-release.html
+http://siatex.blogspot.com/2011/10/new-orleansnot-crochet-friendly.html
+http://siatex.blogspot.com/2011/11/missing-greece.html
+http://siatex.blogspot.com/2014/01/2014-year-of-health-and-discovery.html
+http://siatex.blogspot.com/2012/11/a-tribute-to-greece.html
+https://siatex.blogspot.com/2011/01/big-life-updates.html
+https://siatex.blogspot.com/2010/11/coffee-in-garden.html
+http://siatex.blogspot.com/2011/11/craft-bazaar-bracelet-antique-lace.html
+http://siatex.blogspot.com/2013/02/designing-pineapple-crochet-cuffs.html
+https://siatex.blogspot.com/2010/11/excuse-to-buy-yarn.html
+https://siatex.blogspot.com/2010/12/finally-i-can-share-my-crafty-christmas.html
+https://siatex.blogspot.com/2010/12/fun-with-crazy-yarn.html
+http://siatex.blogspot.com/2013/12/hellas-cowl-pattern-release.html
+http://siatex.blogspot.com/2014/10/its-crochet-season.html
+http://siatex.blogspot.com/2010/12/luxe-washcloth-pattern.html
+http://siatex.blogspot.com/2014/11/lylas-cowls-pattern-just-released.html
+http://siatex.blogspot.com/2014/11/mosaic-potholderwashcloth-pattern.html
+https://siatex.blogspot.com/2010/11/my-first-pattern-sale-woo-hoo.html
+http://siatex.blogspot.com/2014/01/new-pattern-release-andras-man-scarf.html
+http://siatex.blogspot.com/2012/12/nola-christmas-baskets.html
+https://siatex.blogspot.com/2010/11/nouveau-thanksgiving.html
+https://siatex.blogspot.com/2010/11/peer-pressure.html
+https://siatex.blogspot.com/2010/12/picot-tutorial.html
+http://siatex.blogspot.com/2013/02/pineapple-wrist-cuff-1.html
+http://siatex.blogspot.com/2013/02/pineapple-wrist-cuff-2.html
+http://siatex.blogspot.com/2014/01/resolutions-update.html
+https://siatex.blogspot.com/2010/11/reviving-fugly-projects.html
+http://siatex.blogspot.com/2010/11/single-woman-on-road-to-ironman.html
+http://siatex.blogspot.com/2010/11/single-woman-on-road-to-ironman-part-2.html
+http://siatex.blogspot.com/2010/12/single-woman-on-road-to-ironman-part-3.html
+http://siatex.blogspot.com/2010/12/spa-washcloth-crochet-pattern.html
+http://siatex.blogspot.com/2014/11/square-key-scarf-pattern-release.html
+http://siatex.blogspot.com/2013/10/the-12-hats-of-christmas.html
+http://siatex.blogspot.com/2013/11/the-fifth-and-sixth-hats-of-christmas.html
+http://siatex.blogspot.com/2013/11/the-first-and-second-hats-of-christmas.html
+http://siatex.blogspot.com/2013/11/the-third-and-fourth-hats-of-christmas.html
+http://siatex.blogspot.com/2012/10/my-thoughts-on-lance-armstrong.html
+http://siatex.blogspot.com/2013/11/vieux-carre-towel.html
+http://siatex.blogspot.com/2010/12/why-i-like-being-slow-ironman.html
