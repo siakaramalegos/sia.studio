@@ -90,5 +90,4 @@ Later that day I continued my training plan by going into town for a swim.  Howe
 
 *Sucky Yellowstone weather!!!! (raindrops on page) I guess lighting a fire is kind of useless if you have to spend your time in the car to get away from the rain.*
 
-<!-- TODO: update -->
-To be continued... (click here for the next episode)
+[Read Part 2...](/posts/single-woman-on-road-to-ironman-part-2/)
