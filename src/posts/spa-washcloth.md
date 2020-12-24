@@ -1,8 +1,7 @@
 ---
 title: Spa Washcloth Crochet Pattern
 date: 2010-12-12
-tags:
-  - crochet
+tags: ["crochet", "free pattern"]
 isSelect: true
 ---
 **A Crochet-Along video playlist is available on [youtube](https://www.youtube.com/playlist?list=PLOmFcHEnwM5ZgYMOcmvFKrdIHaxbLrB1U).**

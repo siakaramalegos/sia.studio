@@ -1,8 +1,7 @@
 ---
 title: Luxe Washcloth Crochet Pattern
 date: 2010-12-17
-tags:
-  - crochet
+tags: ["crochet", "free pattern"]
 isSelect: true
 ---
 > Want to support independent designers? Consider purchasing a [printer-friendly (pdf)](https://www.etsy.com/listing/168959130/matching-crochet-washcloth-and-bath-mitt?ref=listing-shop-header-3) version of this pattern plus a matching bath mitt on Etsy for a nominal amount. 💗

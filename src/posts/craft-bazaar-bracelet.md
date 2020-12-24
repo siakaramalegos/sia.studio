@@ -1,8 +1,7 @@
 ---
 title: "Craft Bazaar Bracelet: Antique Lace"
 date: 2011-11-06
-tags:
-  - crochet
+tags: ["crochet", "free pattern"]
 isSelect: true
 ---
 > Want to support independent designers? Consider purchasing a [printer-friendly (pdf)](https://www.etsy.com/listing/480809816/vintage-flower-crochet-bracelet-pattern) version of this pattern for a nominal amount. Or, bump up to a [3-pattern pack](https://www.etsy.com/listing/480815718/set-of-3-vintage-crochet-bracelet?ref=shop_home_feat_2) for crochet bracelets! 💗

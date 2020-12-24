@@ -62,11 +62,15 @@ img{
 .color-dark{color:#333333}
 .color-slate{color:#404040}
 .box-block{display:block}
-.box-flex{display:flex}
+.box-flex{
+  display:flex;
+  flex-wrap: wrap;
+}
 .box-inline-flex{display:inline-flex}
 .box-hide{display:none}
 .font-base{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'}
 .font-serif{font-family:'Josefin Sans', serif}
+.gap-300{gap:0.8rem}
 .gap-top-300{margin-top:0.8rem}
 .gap-top-500{margin-top:1.25rem}
 .gap-top-600{margin-top:1.56rem}

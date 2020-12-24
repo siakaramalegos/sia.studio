@@ -1,8 +1,7 @@
 ---
 title: Mosaic Potholder/Washcloth Pattern
 date: 2014-11-18
-tags:
-  - crochet
+tags: ["crochet", "free pattern"]
 isSelect: true
 ---
 This geometric potholder (or washcloth) has concentric half-squares on one side and stripes on the other.  Make quick gifts while trying out a new crochet technique!
