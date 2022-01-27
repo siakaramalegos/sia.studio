@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Thank you for your order!
+templateClass: tmpl-post
+---
+
+{% set introHeading = title %}
+{% set introSummary %}{{ content | safe }}{% endset %}
+
+<!-- TODO: add order details, use icons instead of numbers - download and receipt -->
+<main id="main-content" tabindex="-1">
+  {% include "intro.njk" %}
+
+  <section class="[ post-list ] [ pad-top-700 gap-bottom-900 ]">
+  <div class="[ inner-wrapper ] [ sf-flow ]">
+    <p>You will receive 2 separate emails:</p>
+    <ol>
+      <li>The receipt for your purchase</li>
+      <li>The download link(s) for your files</li>
+    </ol>
+  </div>
+</main>
+
+<main id="main-content" tabindex="-1">

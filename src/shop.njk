@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Shop Sia.Studio
+tags:
+  - nav
+navtitle: Shop
+templateClass: tmpl-post
+---
+
+{{ prices | log }}
+
+{% set introHeading = title %} {% set introSummary %}{{ content | safe }}{%
+endset %}
+
+<main id="main-content" tabindex="-1">
+  {% include "intro.njk" %} {% include "productlist.njk" %}
+</main>
+
+<script>
+  // Fetch our serverless function endpoint via GET
+  // fetch("/.netlify/functions/purchaseSuccess")
+  //   .then((response) => response.json())
+  //   .then((json) => console.log({ json }));
+</script>
