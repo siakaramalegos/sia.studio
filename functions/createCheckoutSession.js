@@ -1,11 +1,12 @@
-// https://stripe.com/docs/payments/accept-a-payment?integration=checkout
-const api_key =
-  process.env.NODE_ENV === "development"
+exports.handler = async function (event, context) {
+  const environment = process.env.CONTEXT
+  const api_key = environment !== "production"
     ? process.env.STRIPE_TEST_KEY
     : process.env.STRIPE_SECRET_KEY;
-const stripe = require("stripe")(api_key);
 
-exports.handler = async function (event, context) {
+  // https://stripe.com/docs/payments/accept-a-payment?integration=checkout
+  const stripe = require("stripe")(api_key);
+
   const referer = event.headers.referer;
   // JSON.parse doesn't work here
   const params = new URLSearchParams(event.body);
