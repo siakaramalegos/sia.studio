@@ -52,22 +52,72 @@ function sendDownloadEmail({ itemName, filename, url, userEmail }) {
     });
 }
 
+const environment = process.env.CONTEXT;
+const environmentKeys = {
+  production: {
+    STRIPE_KEY: process.env.STRIPE_SECRET_KEY,
+    WEBHOOK_KEY: process.env.STRIPE_WEBHOOK_SECRET,
+  },
+  other: {
+    STRIPE_KEY: process.env.STRIPE_TEST_KEY,
+    WEBHOOK_KEY: process.env.STRIPE_WEBHOOK_SECRET_TEST,
+  },
+};
+const apiKeys =
+  environment !== "production"
+    ? environmentKeys.other
+    : environmentKeys.production;
+const stripe = require("stripe")(apiKeys.STRIPE_KEY);
+
 exports.handler = async function (event, context) {
-  // console.log({ event, context });
-  const signedUrl = getSignedUrl(filename);
+  const { body, headers } = event;
 
-  // TODO: pass this data in from event or context or grab another way
-  // Prob needs to be async
-  sendDownloadEmail({
-    itemName: "Mosaic coloring pages",
-    filename: "MosaicMiniPackSmaller.pdf",
-    url: signedUrl,
-    userEmail: "info@sia.studio",
-  });
+  try {
+    // 1. Check that the request is really from Stripe
+    const stripeEvent = stripe.webhooks.constructEvent(
+      body,
+      headers["stripe-signature"],
+      apiKeys.WEBHOOK_KEY
+    );
 
-  // TODO respond with Stripe webhook data - this is happening separate from the user interaction with the site
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ signedUrl }),
-  };
+    // 2. Handle successful payments
+    if (stripeEvent.type === "checkout.session.completed") {
+      // Extract the checkout object itself from the event
+      const eventObject = stripeEvent.data.object;
+
+      const items = await stripe.checkout.sessions.listLineItems(
+        eventObject.id,
+        { expand: ["data.price.product"] }
+      );
+
+      // The aws digital download filename to fulfill the order
+      const product = items.data[0]["price"]["product"];
+      const filename = product.metadata.filename;
+      const itemName = product.name;
+
+      // Fulfilmment via aws and sendgrid ...
+      const signedUrl = getSignedUrl(filename);
+
+      // Prob needs to be async
+      sendDownloadEmail({
+        itemName,
+        filename,
+        url: signedUrl,
+        userEmail: eventObject.customer_details.email,
+      });
+    }
+
+    // Response sent back to stripe - everything is ok!
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ received: true }),
+    };
+  } catch (err) {
+    console.log(`Stripe webhook failed with ${err}`);
+
+    return {
+      statusCode: 400,
+      body: `Webhook Error: ${err.message}`,
+    };
+  }
 };
