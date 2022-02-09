@@ -1,6 +1,7 @@
 // FYI this full integration is not yet tested/working (was in parts before though)
 const AWS = require("aws-sdk");
 const S3_BUCKET = "sia-studio-downloads";
+const environment = process.env.CONTEXT;
 
 // Gotcha: AWS_ is a reserved prefix in netlify so you need to start it with something else
 function getSignedUrl(filename) {
@@ -13,11 +14,13 @@ function getSignedUrl(filename) {
 
   const s3 = new AWS.S3();
 
+  // 60 seconds for dev/staging or 1 week in production
+  const expirationTime = environment !== "production" ? 60 : 604800
+
   return s3.getSignedUrl("getObject", {
     Key: filename,
     Bucket: S3_BUCKET,
-    // Expires: 86400 * 7, // number of seconds in 1 day/24 hours * 7 = 1 week.
-    Expires: 60, // 60 seconds.
+    Expires: expirationTime,
   });
 }
 
@@ -52,7 +55,6 @@ function sendDownloadEmail({ itemName, filename, url, userEmail }) {
     });
 }
 
-const environment = process.env.CONTEXT;
 const environmentKeys = {
   production: {
     STRIPE_KEY: process.env.STRIPE_SECRET_KEY,
