@@ -4,7 +4,11 @@
   publish = "_site"
 [dev]
   command = "npm run start"
-[[ redirects ]]
+[[redirects]]
     from = "/api/*"
     to = '/.netlify/functions/:splat'
     status = 200
+[[plugins]]
+  package = "netlify-plugin-inline-functions-env"
+  [plugins.inputs]
+    include = ["CONTEXT"]
