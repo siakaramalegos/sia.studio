@@ -71,12 +71,10 @@ const apiKeys =
     : environmentKeys.production;
 const stripe = require("stripe")(apiKeys.STRIPE_KEY);
 
-console.log({apiKeys})
-
 exports.handler = async function (event, context) {
   const { body, headers } = event;
 
-  try {
+  // try {
     // 1. Check that the request is really from Stripe
     const stripeEvent = stripe.webhooks.constructEvent(
       body,
@@ -101,6 +99,7 @@ exports.handler = async function (event, context) {
 
       // Fulfilmment via aws and sendgrid ...
       const signedUrl = getSignedUrl(filename);
+      console.log({eventObject, product, filename, signedUrl, stripeEvent});
 
       // Prob needs to be async
       sendDownloadEmail({
@@ -116,12 +115,12 @@ exports.handler = async function (event, context) {
       statusCode: 200,
       body: JSON.stringify({ received: true }),
     };
-  } catch (err) {
-    console.log(`Stripe webhook failed with ${err}`);
+  // } catch (err) {
+  //   console.log(`Stripe webhook failed with ${err}`);
 
-    return {
-      statusCode: 400,
-      body: `Webhook Error: ${err.message}`,
-    };
-  }
+  //   return {
+  //     statusCode: 400,
+  //     body: `Webhook Error: ${err.message}`,
+  //   };
+  // }
 };
