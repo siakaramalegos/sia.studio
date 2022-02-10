@@ -31,32 +31,6 @@ const templateId = "d-a2083ee6711e419399ad3ecb0ec363cd";
 const sgMail = require("@sendgrid/mail");
 const fromEmail = "sia@sia.studio";
 
-async function sendDownloadEmail({ itemName, filename, url, userEmail }) {
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  const msg = {
-    to: userEmail,
-    from: fromEmail, // the verified sender
-    templateId,
-    subject: "Sending with SendGrid is Fun", // TODO: delete if this is not used
-    // TODO: add itemName to template for user friendly text
-    dynamic_template_data: {
-      itemName,
-      filename,
-      url,
-    },
-  };
-  console.log({msg});
-  try {
-    await sgMail.send(msg);
-  } catch (error) {
-    console.error(error);
-
-    if (error.response) {
-      console.error(error.response.body)
-    }
-  }
-}
-
 const environmentKeys = {
   production: {
     STRIPE_KEY: process.env.STRIPE_SECRET_KEY,
@@ -76,7 +50,7 @@ const stripe = require("stripe")(apiKeys.STRIPE_KEY);
 exports.handler = async function (event, context) {
   const { body, headers } = event;
 
-  // try {
+  try {
     // 1. Check that the request is really from Stripe
     const stripeEvent = stripe.webhooks.constructEvent(
       body,
@@ -101,7 +75,6 @@ exports.handler = async function (event, context) {
 
       // Fulfilmment via aws and sendgrid ...
       const signedUrl = getSignedUrl(filename);
-      console.log({eventObject, product, filename, signedUrl, stripeEvent});
 
       sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -109,24 +82,15 @@ exports.handler = async function (event, context) {
         to: eventObject.customer_details.email,
         from: fromEmail, // the verified sender
         templateId,
-        subject: "Sending with SendGrid is Fun", // TODO: delete if this is not used
-        // TODO: add itemName to template for user friendly text
         dynamic_template_data: {
           itemName,
           filename,
           url: signedUrl,
         },
       };
-      console.log({msg});
 
       await sgMail.send(msg);
-      // Prob needs to be async
-      // await sendDownloadEmail({
-      //   itemName,
-      //   filename,
-      //   url: signedUrl,
-      //   userEmail: eventObject.customer_details.email,
-      // });
+      console.log('Email sent!');
     }
 
     // Response sent back to stripe - everything is ok!
@@ -134,12 +98,12 @@ exports.handler = async function (event, context) {
       statusCode: 200,
       body: JSON.stringify({ received: true }),
     };
-  // } catch (err) {
-  //   console.log(`Stripe webhook failed with ${err}`);
+  } catch (err) {
+    console.log(`Stripe webhook failed with ${err}`);
 
-  //   return {
-  //     statusCode: 400,
-  //     body: `Webhook Error: ${err.message}`,
-  //   };
-  // }
+    return {
+      statusCode: 400,
+      body: `Webhook Error: ${err.message}`,
+    };
+  }
 };
