@@ -31,7 +31,7 @@ const templateId = "d-a2083ee6711e419399ad3ecb0ec363cd";
 const sgMail = require("@sendgrid/mail");
 const fromEmail = "sia@sia.studio";
 
-function sendDownloadEmail({ itemName, filename, url, userEmail }) {
+async function sendDownloadEmail({ itemName, filename, url, userEmail }) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: userEmail,
@@ -45,14 +45,16 @@ function sendDownloadEmail({ itemName, filename, url, userEmail }) {
       url,
     },
   };
-  sgMail
-    .send(msg)
-    .then(() => {
-      console.log("Email sent");
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  console.log({msg});
+  try {
+    await sgMail.send(msg);
+  } catch (error) {
+    console.error(error);
+
+    if (error.response) {
+      console.error(error.response.body)
+    }
+  }
 }
 
 const environmentKeys = {
@@ -101,13 +103,30 @@ exports.handler = async function (event, context) {
       const signedUrl = getSignedUrl(filename);
       console.log({eventObject, product, filename, signedUrl, stripeEvent});
 
+      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+      const msg = {
+        to: eventObject.customer_details.email,
+        from: fromEmail, // the verified sender
+        templateId,
+        subject: "Sending with SendGrid is Fun", // TODO: delete if this is not used
+        // TODO: add itemName to template for user friendly text
+        dynamic_template_data: {
+          itemName,
+          filename,
+          url: signedUrl,
+        },
+      };
+      console.log({msg});
+
+      await sgMail.send(msg);
       // Prob needs to be async
-      sendDownloadEmail({
-        itemName,
-        filename,
-        url: signedUrl,
-        userEmail: eventObject.customer_details.email,
-      });
+      // await sendDownloadEmail({
+      //   itemName,
+      //   filename,
+      //   url: signedUrl,
+      //   userEmail: eventObject.customer_details.email,
+      // });
     }
 
     // Response sent back to stripe - everything is ok!
