@@ -71,6 +71,8 @@ const apiKeys =
     : environmentKeys.production;
 const stripe = require("stripe")(apiKeys.STRIPE_KEY);
 
+console.log({apiKeys})
+
 exports.handler = async function (event, context) {
   const { body, headers } = event;
 
