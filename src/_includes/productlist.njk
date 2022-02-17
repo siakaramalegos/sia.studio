@@ -2,9 +2,9 @@
 <section class="[ pad-top-700 gap-bottom-900 ]">
   <div class="[ inner-wrapper ] [ sf-flow ]">
     <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">Products</h2>
-    <ol class="[ sf-flow ] [ pad-top-300 ] [ product ]">
+    <ol class="[ pad-top-300 ] [ product ]">
       {% for price in prices %}
-      <li class="post-list__item">
+      <li class="product-card sf-flow">
         <h3 class="font-base leading-tight text-600 weight-mid">
           <a
             href="{{ price.product.url }}"
