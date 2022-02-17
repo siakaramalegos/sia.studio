@@ -195,7 +195,7 @@ body{scroll-behavior:smooth;display:flex;flex-direction:column}
 main{flex:1 0 auto}
 main:focus{outline:none}
 hr{display:block;height:1px;max-width:500px;background:var(--color-stroke);border:none;margin:3.05rem auto}
-.inner-wrapper{max-width:964px;margin-left:auto;margin-right:auto;padding-left:1.25rem;padding-right:1.25rem}
+.inner-wrapper{max-width:60rem;margin-left:auto;margin-right:auto;padding-left:1.25rem;padding-right:1.25rem}
 .skip-link:not(:focus),.post__footer h2 a,.visually-hidden{border:0;clip:rect(0 0 0 0);height:auto;margin:0;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap}
 .wrapper{max-width:58rem;margin-left:auto;margin-right:auto;padding-left:1.25rem;padding-right:1.25rem}
 .button{display:inline-block;border:none;background-color:var(--color-action-bg);color:var(--color-action-text);padding:.8rem 1rem;line-height:1;margin:0;text-decoration:none;cursor:pointer;-webkit-appearance:none;-moz-appearance:none}
@@ -310,7 +310,7 @@ h2:hover .direct-link {
 
 .product {
   display: grid;
-  gap: 32px;
+  gap: 48px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .product img {
