@@ -19,6 +19,11 @@
       "text": "Twitter",
       "url": "https://twitter.com/TheGreenGreek",
       "external": true
+    },
+    {
+      "text": "Shop",
+      "url": "/shop",
+      "external": false
     }
   ]
 }

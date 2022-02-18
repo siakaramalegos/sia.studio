@@ -307,3 +307,20 @@ code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;font-
 h2:hover .direct-link {
   opacity: 1;
 }
+
+.product {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.product img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.product .button {
+  font-size: medium;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

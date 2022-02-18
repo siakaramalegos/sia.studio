@@ -1,0 +1,34 @@
+{% if prices.length %}
+<section class="[ pad-top-700 gap-bottom-900 ]">
+  <div class="[ inner-wrapper ] [ sf-flow ]">
+    <h2 class="[ post-list__heading ] [ text-700 md:text-800 ]">Products</h2>
+    <ol class="[ pad-top-300 ] [ product ]">
+      {% for price in prices %}
+      <li class="product-card sf-flow">
+        <h3 class="font-base leading-tight text-600 weight-mid">
+          <a
+            href="{{ price.product.url }}"
+            class="post-list__link"
+            rel="bookmark"
+            >{{ price.product.name }}</a
+          >
+        </h3>
+        <img src="{% src price.product.metadata.mainImage %}"
+          srcset="{% srcset price.product.metadata.mainImage %}"
+          alt="">
+        <p>{{ price.product.description }}</p>
+        <form action="/api/createCheckoutSession" method="POST">
+          <input
+            type="hidden"
+            value="{{ price.id }}"
+            name="price_id"
+            class="hidden"
+          />
+          <button class="button" type="submit">Buy now {{ price.unit_amount | convertCentsToDollars }}</button>
+        </form>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endif %}
