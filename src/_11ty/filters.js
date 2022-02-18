@@ -3,7 +3,6 @@ const rootUrl = require('../_data/metadata.json').url
 
 module.exports = {
   convertCentsToDollars: (cents) => {
-    console.log({cents});
     return (cents / 100).toLocaleString("en-US", {style:"currency", currency:"USD"})
   },
   readableDateFromISO: (dateStr, formatStr = "dd LLL yyyy 'at' hh:mma") => {
