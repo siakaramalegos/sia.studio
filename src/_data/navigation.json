@@ -24,6 +24,11 @@
       "text": "Shop",
       "url": "/shop",
       "external": false
+    },
+    {
+      "text": "FAQ",
+      "url": "/faq",
+      "external": false
     }
   ]
 }

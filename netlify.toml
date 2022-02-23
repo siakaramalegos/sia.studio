@@ -3,7 +3,7 @@
   functions = "functions"
   publish = "_site"
 [dev]
-  command = "npm run start"
+  command = "npm run dev"
 [[redirects]]
     from = "/api/*"
     to = '/.netlify/functions/:splat'

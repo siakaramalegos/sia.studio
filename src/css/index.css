@@ -324,6 +324,10 @@ h2:hover .direct-link {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+
+ol {
+  padding-inline-start: 40px;
+}
 /* .product-card {
   max-width: 300px;
 } */

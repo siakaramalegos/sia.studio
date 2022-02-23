@@ -4,7 +4,8 @@
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
     "build": "NODE_ENV=production npx eleventy",
-    "start": "NODE_ENV=development npx eleventy --serve",
+    "start": "netlify dev",
+    "dev": "NODE_ENV=development npx eleventy --serve",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
