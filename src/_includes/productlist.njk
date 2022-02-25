@@ -17,7 +17,7 @@
           srcset="{% srcset price.product.metadata.mainImage %}"
           alt="">
         <p>{{ price.product.description }}</p>
-        <form action="/api/createCheckoutSession" method="POST">
+        <form action="/.netlify/functions/createCheckoutSession" method="POST">
           <input
             type="hidden"
             value="{{ price.id }}"

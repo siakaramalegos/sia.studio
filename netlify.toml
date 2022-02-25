@@ -4,3 +4,7 @@
   publish = "_site"
 [dev]
   command = "npm run start"
+[[plugins]]
+  package = "netlify-plugin-inline-functions-env"
+  [plugins.inputs]
+    include = ["CONTEXT"]

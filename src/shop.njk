@@ -16,9 +16,3 @@ templateClass: tmpl-post
   {% include "intro.njk" %}
   {% include "productlist.njk" %}
 </main>
-
-<script>
-  fetch("/.netlify/functions/createCheckoutSession")
-    .then(res => res.json())
-    .then(json => console.log({json}))
-</script>
